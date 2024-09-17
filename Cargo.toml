@@ -3,5 +3,10 @@ name = "rustwb_l1-7"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "tokrrup"
+path = "src/interrup_channel.rs"
+
 [dependencies]
-tokio = "1.40.0"
+tokio = { version = "1.39.3", features = ["full"] }
+tokio-util = "0.7.11"
